@@ -1,0 +1,218 @@
+@import '../../variables';
+
+.SupportService {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media only screen and(min-width: 1024px) {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .InfoElement {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 30px;
+    flex: 1;
+    align-items: center;
+
+    @media only screen and (min-width: 1000px) {
+      align-items: unset;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .IconCircle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background-color: $brown;
+
+      .CallIcon, .ChatIcon, .EmailIcon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .ChatIcon {
+        margin-right: 3px;
+      }
+
+      .ChatIconOn {
+        filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(351deg) brightness(104%) contrast(104%);
+      }
+
+      #ChatBtnChange.ChatIconOn {
+        background-repeat: no-repeat;
+        background-image: url("../../images/chat-activated-blk.svg");
+        background-color: transparent;
+        background-size: 105% 102%;
+        padding: 0.5em;
+        margin: -1em;
+      }
+
+      .EmailIcon {
+        margin-right: 5px;
+      }
+    }
+
+    .InfoName {
+      display: none;
+      background-color: $brown;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      padding-left: 150px;
+      padding-right: 10px;
+      margin-left: -10px;
+      font-size: 30px;
+    }
+
+    .MainInfo {
+      display: none;
+      color: $white;
+      text-decoration: none;
+      opacity: .8;
+
+      #chatButton {
+        font-family: $font-family-metropolis;
+        font-size: 28px;
+        background: rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+        display: inline-block;
+        width: 32vw;
+        right: 0;
+        border: 0 solid transparent;
+        text-align: right;
+        position: relative;
+        z-index: 99;
+        padding: 3em 0 4em 0;
+        margin: -3em 0 -4em 0;
+      }
+
+      .Designator {
+        display: block;
+      }
+
+      .DesignatorValue {
+        font-size: 24px;
+      }
+
+      .Column {
+        > .DesignatorValue {
+          margin-bottom: 20px;
+        }
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .InfoElement {
+          padding: 10px 0 20px;
+        }
+
+        .DesignatorValue {
+          display: none;
+        }
+
+        .Designator,
+        .LiveChatButton {
+          color: rgba(0, 0, 0, 0);
+        }
+
+        .Separator {
+          border-left: 0 solid #ffffff;
+          height: 1px;
+        }
+      }
+
+      .Separator {
+        border-left: 1px solid $white;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 46px;
+        margin-top: 4px;
+      }
+
+      &.Email {
+        .DesignatorValue {
+          font-size: 20px;
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+
+    &.JustifySpaceBetween {
+      justify-content: space-between;
+    }
+
+    &.AlignCenter {
+      align-items: center;
+    }
+  }
+
+  .Column {
+    display: flex;
+    flex-direction: column;
+
+    &.AlignEnd {
+      align-items: flex-end;
+    }
+  }
+
+  &.UserLoggedIn {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 1000px) {
+    position: relative;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+
+    #chatButton {
+      color: $white;
+    }
+
+    .Separator {
+      border-left: 1px solid $white;
+      height: 46px;
+    }
+
+    .InfoElement {
+      background-color: $dark-black;
+
+      .InfoName {
+        display: flex;
+        flex: 1;
+        text-align: right;
+      }
+
+      .MainInfo {
+        display: block;
+      }
+    }
+
+    &.UserLoggedIn {
+      padding-bottom: 60px;
+    }
+  }
+}

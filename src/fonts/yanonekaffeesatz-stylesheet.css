@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    font-display:swap;
+    src:  url('/fonts/yanonekaffeesatz-regular.ttf') format('truetype'),
+    url('/fonts/yanonekaffeesatz-regular.woff') format('woff'),
+    url('/fonts/yanonekaffeesatz-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz Bold';
+    font-display:swap;
+    src: url('/fonts/yanonekaffeesatz-bold.ttf') format('truetype'),
+    url('/fonts/yanonekaffeesatz-bold.woff') format('woff'),
+    url('/fonts/yanonekaffeesatz-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

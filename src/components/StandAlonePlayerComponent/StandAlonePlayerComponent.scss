@@ -1,0 +1,152 @@
+@import "../../variables.scss";
+
+.EmbeddedPlayerView {
+  margin-bottom: 40px;
+
+  .EmbeddedPlayerView-InitialLoad {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+
+    .PlayerLoader {
+      height: 70vh;
+      width: 100%;
+      margin-right: 10px;
+    }
+
+    .PlaylistLoader {
+      height: 70vh;
+      width: 400px;
+      overflow: auto;
+
+      .PlaylistEntryLoader {
+        margin-bottom: 10px;
+
+        .PlaylistEntryImageLoader {
+          height: 200px;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+
+        .PlaylistEntryTextLoader {
+          height: 30px;
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .MainPlayer {
+    .BaseVideoPlayerCore {
+      .vjs-playlist-player-container {
+        .BaseVideoPlayerCore-inner {
+          .video-js {
+            flex: 1;
+            height: 70vh;
+            min-height: 70vh;
+
+            @media only screen and (min-width: 1025px) {
+              flex: 1;
+            }
+          }
+
+          .vjs-poster {
+            background-size: cover;
+          }
+
+          .CustomPlaylist {
+            height: 100%;
+            margin-left: 10px;
+            overflow: auto;
+
+            .MovieBoxCoverStillDisplay {
+              margin-bottom: 10px;
+              margin-left: auto;
+              margin-right: auto;
+
+              .FullPlayer {
+                .BaseVideoPlayerCore {
+                  .vjs-playlist-player-container {
+                    .BaseVideoPlayerCore-inner {
+                      > .video-js {
+                        height: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .LoadingIndicators {
+              height: fit-content;
+
+              .PlaylistEntryLoader {
+                margin-bottom: 10px;
+
+                .PlaylistEntryImageLoader {
+                  height: 200px;
+                  width: 100%;
+                  margin-bottom: 5px;
+                }
+
+                .PlaylistEntryTextLoader {
+                  height: 30px;
+                  width: 150px;
+                }
+              }
+            }
+
+            @media (min-width: 1025px) {
+              height: 70vh;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .MovieInfo {
+    .Title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+        font-size: 30px;
+        color: white;
+      }
+
+      p {
+        margin: 0;
+        font-size: 30px;
+        color: white;
+        opacity: 0.5;
+      }
+
+      > *:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .GalleryToggle {
+        margin-left: auto;
+        font-size: 30px;
+        color: white;
+      }
+    }
+
+    .Description {
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  .TitleLoader {
+    width: 400px;
+    height: 30px;
+  }
+
+  .DescriptionLoader {
+    width: 40%;
+    height: 20px;
+  }
+}

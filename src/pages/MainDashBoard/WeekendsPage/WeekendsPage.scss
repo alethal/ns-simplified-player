@@ -1,0 +1,240 @@
+
+.wknsPageContentContainer .BaseVideoPlayerCore.Preview .vjs-playlist-player-container .BaseVideoPlayerCore-inner .video-js .vjs-control-bar { display: flex !important; }
+
+.wknsPageContentContainer .vjs-theme-fantasy .vjs-button>.vjs-icon-placeholder:before, .vjs-theme-fantasy .vjs-time-control {
+  line-height: 24px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .wknsPageContentContainer .BaseVideoPlayerCore .vjs-playlist-player-container .BaseVideoPlayerCore-inner .video-js {
+    flex: 0 1;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 1778px;
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+.wknsPageContentContainer .BaseVideoPlayerCore .vjs-playlist-player-container .BaseVideoPlayerCore-inner .video-js .vjs-control-bar .vjs-control {
+   height: auto;
+   float: left;
+   max-width: 200px;}
+
+  .wknsPageContentContainer .BaseVideoPlayerCore .vjs-playlist-player-container .BaseVideoPlayerCore-inner .video-js .vjs-control-bar {
+    flex-direction: row;
+    height: 65px;
+    top: auto;
+  }
+
+
+ }
+
+
+
+.wknsPageContentContainer .video-js {
+  display: block !important;
+  vertical-align: top !important;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+  position: relative !important;
+  padding: 0;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: initial;
+}
+
+.wknsPageContentContainer .video-js .vjs-tech {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wknsPageContentContainer .BaseVideoPlayerCore .vjs-playlist-player-container .BaseVideoPlayerCore-inner .PreviewOverlay {
+  position: relative !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.wknsPageContentContainer .BaseVideoPlayerCore.Preview .vjs-playlist-player-container .BaseVideoPlayerCore-inner .video-js .vjs-tech {
+  pointer-events: auto !important;
+}
+
+.WeekendsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100vw;
+
+  .WeekendsPageInner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+  }
+}
+
+@import "../../../variables";
+
+
+.WknsLogoHeader { margin: 0 0 25px 0; }
+.WknsLogoHeader img.wknsLogoImg, .WknsLogoHeader .wknsTopSaleCopy { max-width: 75%; margin: 0 auto; }
+
+.wknsPageContentContainer .vjs-poster { width: 2000px; height: 1125px; }
+
+.wknsPageContentContainer .FullPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 2000px;
+  max-height: 1125px;
+}
+
+.WeekendsPage {
+  .WeekendsPageInner {  }
+}
+
+.wknsPreviousWeekendsBoxes, .WknsCopyWrap { text-align: center; padding: 0 4em; }
+
+.wknsPreviousWeekendsBoxes h4 { font-size: 1.25em; text-align:center; color: #bc9e5d; letter-spacing: 10px;}
+
+.wknsPreviousWeekendsBoxes ul {
+  margin: 0; padding: 0; }
+
+.wknsPreviousWeekendsBoxes li {
+  list-style-type: none;
+  width: 19%;
+  max-width: 19%;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px 5px 0;  }
+
+.wknsPreviousWeekendsBoxes li a {
+  text-decoration: none;
+  display: inline-block;
+  background: transparent; }
+
+.wknsPreviousWeekendsBoxes a:hover {  background: transparent; }
+
+.wknsPreviousWeekendsBoxes li:last-child {  }
+.wknsPreviousWeekendsBoxes li:first-child {  }
+
+.wknsPreviousWeekendsBoxes li img {
+  width: 100%;
+  border: 1px solid #bc9e5d;
+  margin: 0;
+  padding: 0; }
+
+.wknsPreviousWeekendsBoxes li a.wknsPrevLinkTitle { border: 0 solid transparent; }
+
+.wknsPrevLinkTitle { font-size: .85em;  text-align: center; color: #21315c;}
+
+.wknsPreviousTitle { border: 0 solid transparent; margin: 0 0 50px 0; text-transform: uppercase; line-height: 1;}
+
+.wknsInnerTitle { font-size: 1.15em; border: 0 solid transparent; color: #bc9e5d; font-weight: 800; margin: 10px 0 2px 0;}
+
+.wknsEpisodeCopy { text-align: center; }
+.wknsEpisodeCopy a { text-decoration: none; color: $dark-blue; }
+
+
+.wknsNonMembUpsellWrap { padding-top: 3em; }
+
+
+@media screen and (max-width: 1240px) {
+
+ .wknsPreviousWeekendsBoxes li {
+    list-style-type: none;
+    width: 48%;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;  }
+
+
+.wknsPreviousWeekendsBoxes li:first-child {  }
+  .wknsPreviousWeekendsBoxes li:last-child {  }
+
+} /* end 1240 */
+
+/* 650 */
+
+@media screen and (max-width: 650px) {
+
+  .wknsNonMembUpsellWrap { padding-top: .15em; }
+
+  .wknsHRWrap {
+    margin: 1em 0 1em 0;
+    line-height: 1;
+    padding: 0; }
+
+
+  .wknsPreviousWeekendsBoxes li {
+    list-style-type: none;
+    display: inline-block;
+    width: 38vw;
+    max-width: 38vw;
+    text-align: center;
+    margin: 0 10px 0 0;
+    min-height: 400px;
+    box-sizing: border-box;  }
+
+  .wknsPreviousWeekendsBoxes li:last-child { margin: 0 10px 0 0; }
+  .wknsPreviousWeekendsBoxes li:first-child { margin: 0 10px 0 0; }
+
+
+  .wknsPreviousShowsHeader {
+    width: 90%; text-align: center; padding: 20px 0 20px 0; display: block;
+    color: #bc9e5d; text-transform: uppercase; margin: 0 auto; letter-spacing: .15em;
+    font-family: 'Metropolis-Bold', helvetica, arial, sans-serif; font-size: 1.25em;
+  }
+
+  .wknsFreeMovieCopy {
+    padding: 1em 0 1em 0; }
+} /* end 650 */
+
+/* new css version */
+
+.wknsWeekendsPage { margin: 0 auto; max-width: 85%; display: block; padding: 85px 0 50px 0; }
+
+
+.wknsPageContentContainer  {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  transform: translate3d(0, 0, 0);
+}
+
+
+.wknsLogo, .wknsTopSaleCopy, .wknsComingSoon,.wknsPlayerHolder  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+
+.wknsTopSaleCopy { font-size: .85em; text-align: center; margin: 0 20px;}
+
+.wknsLogoImg {  max-width: 100%; height: auto; }
+
+.wknsComingSoon img { max-width: 100%; height: auto;}
+
+.wknsComingSoon { margin: 1em 0 0 0; }
+
+.wknsPlayerHolder { }
+
+.wknsNonMembUpsellWrap { width: 100%; text-align: center; display:block; padding: 1em 0 0 0; }
+.wknsNonMembUpsellImg { max-width: 85%; height: auto; margin: 0 auto; }
+
+
+

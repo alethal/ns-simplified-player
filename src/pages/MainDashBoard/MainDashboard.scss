@@ -1,0 +1,531 @@
+@import "../../variables";
+
+.MainDashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .Header {
+    display: flex;
+    width: 100%;
+  }
+
+  .PrimaryHeader {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    .Inner {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .ApplicationLogo {
+      background-color: transparent;
+      width: 250px;
+      height: 60px;
+
+      .Route-Dashboard-Nav-Holder { display: block; background: #ff6600; }
+
+
+    .RouteHolder { flex: 1 100%; }
+
+      svg {
+        height: 100%;
+      }
+
+      path, polygon {
+        //fill: $white;
+      }
+    }
+
+    .UserActions {
+      display: none;
+    }
+
+    .MobileMenuBtn {
+      display: block;
+    }
+
+    @media (min-width: 1230px) {
+      padding-left: 20px;
+      padding-right: 30px;
+    }
+
+
+    @media (min-width: 1024px) {
+      background-color: $white;
+      height: auto;
+
+      .Inner {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .ApplicationLogo {
+        background-color: $white;
+        width: 450px;
+        height: 100px;
+
+        svg {
+          height: 100px;
+        }
+
+        path, polygon {
+          //fill: $dark-blue;
+        }
+      }
+
+
+      .UserActions {
+        display: flex;
+      }
+
+      .MobileMenuBtn {
+        display: none;
+      }
+    }
+  }
+
+  .SecondaryHeader {
+    z-index: 901;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    transition: 0s;
+    width: calc(100vw - 35px);
+    display: none;
+    height: 60px;
+
+    .ApplicationLogo {
+      display: none;
+    }
+
+    .UserAction {
+      font-size: 1.5em;
+    }
+  }
+
+  .Loading {
+    flex: 1 !important;
+    min-height: 0;
+    overflow: hidden !important;
+  }
+
+  .MainContent {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .MainContent-inner {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+
+      .MainContainer {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        .AvailableOptions {
+          display: none;
+        }
+
+        .LegalNotice {
+          display: none;
+        }
+
+        > div:nth-child(2) {
+          overflow: auto;
+          flex: 1;
+          min-height: 0;
+        }
+
+        @media (min-width: 1024px) {
+          display: block;
+
+          > div:nth-child(2) {
+            overflow: auto;
+            flex: none;
+          }
+        }
+      }
+
+      .MobileUserActions {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      overflow: auto;
+      display: block;
+
+      .MainContent-inner {
+
+        .MainContainer {
+
+          .AvailableOptions {
+            display: flex;
+          }
+
+          .LegalNotice {
+            display: block;
+          }
+        }
+
+        .MobileUserActions {
+          display: none;
+        }
+      }
+
+      .SideMenu {
+        display: none;
+      }
+    }
+  }
+
+  .MyAccountPage {
+    margin-top: 0;
+
+    @media (min-width: 1024px) {
+      margin-top: 60px;
+    }
+  }
+
+  .MobileUserActions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .Notifications {
+    top: 105px;
+  }
+
+  .ModalDialog {
+
+    &.Center {
+      left: 0;
+    }
+  }
+
+  &.PinTop {
+
+    .Notifications {
+      top: 65px;
+    }
+
+    .SecondaryHeader {
+      top: 0;
+      background-color: $white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+      .ApplicationLogo {
+        display: flex;
+      }
+
+      .UserActions, .AccountActions {
+        display: flex;
+      }
+    }
+
+    .PrimaryHeader {
+      top: 0;
+    }
+
+    .ModalDialog {
+      top: 70px;
+
+      &.Center {
+        left: 0;
+      }
+    }
+
+    .MyAccountPage {
+      margin-top: 0;
+
+      .Infos {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 900;
+        width: calc(100vw - 45px);
+        border-radius: 0;
+
+        .FirstRow {
+          display: none;
+
+          .MyAccountUserInfos {
+            display: none;
+          }
+        }
+
+        .SecondRow {
+          justify-content: space-between;
+          margin: 10px 0 10px 20px;
+
+          .MyAccountUserInfos {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  &.WhiteBackground {
+    background-color: $white;
+  }
+
+  &.BlackBackground {
+    background-color: $dark-black;
+  }
+
+  .AvailableOptions {
+    margin-top: 20px;
+
+    .Row {
+
+      .AdBanner {
+        height: 120px;
+      }
+
+      .LinksWrapper {
+
+        .Links {
+          grid-column-gap: 30px;
+
+          .Link {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.LoadInProgress {
+
+    .MainContent {
+      display: flex;
+
+      .MainContent-inner{
+
+        .MainContainer {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-color: $white;
+
+    .ModalDialog {
+
+      &.Center {
+        top: 120px;
+        left: 40vw;
+      }
+    }
+
+    &.PinTop {
+
+      .ModalDialog {
+
+        &.Center {
+          top: 70px;
+          left: 40vw;
+        }
+      }
+    }
+
+    .SecondaryHeader {
+      display: flex;
+      width: calc(100vw - 16px);
+
+      .MainSearch {
+        width: 150px;
+
+        .searchTerm {
+          font-size: 14px;
+        }
+      }
+
+      .Section:last-child {
+        align-items: center;
+      }
+
+      .NavBar-Btn {
+        font-size: 14px;
+        height: 28px;
+        min-width: 80px;
+      }
+
+      .UserActions {
+        align-items: center;
+        margin-right: 0;
+      }
+
+      .UserAction {
+        font-size: 1em;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (min-width: 1050px) {
+
+    .SecondaryHeader {
+      display: flex;
+      width: calc(100vw - 16px);
+
+      .NavBar-Btn {
+        font-size: 14px;
+        height: 28px;
+        min-width: 80px;
+      }
+
+      .MainSearch {
+        width: 200px;
+
+        .searchTerm {
+          font-size: 18px;
+        }
+      }
+
+      .UserAction {
+        font-size: 1.25em;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    .SecondaryHeader {
+      display: flex;
+
+      .NavBar-Btn {
+        font-size: 16px;
+        height: 28px;
+        min-width: 100px;
+      }
+
+      .UserAction {
+        font-size: 1.25em;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (min-width: 1250px) {
+
+    .SecondaryHeader {
+
+      .UserAction {
+        font-size: 1.5em;
+        white-space: nowrap;
+      }
+    }
+
+    .AvailableOptions {
+
+      .Row {
+
+        .AdBanner {
+          height: 150px;
+        }
+
+        .LinksWrapper {
+
+          .Links {
+
+            .Link {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1360px) {
+
+    .SecondaryHeader {
+
+      .MainSearch {
+        width: 255px;
+      }
+
+      .Separator {
+        font-size: 24px;
+        margin-bottom: 7px;
+      }
+
+      .NavBar-Btn {
+        font-size: 18px;
+        height: 30px;
+        min-width: 100px;
+      }
+
+      .UserAction {
+        font-size: 1.65em;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+
+    .SecondaryHeader {
+
+      .Separator {
+        margin-bottom: 0;
+      }
+
+      .NavBar-Btn {
+        font-size: 20px;
+        height: 30px;
+        min-width: 120px;
+      }
+
+      .UserAction {
+        font-size: 1.85em;
+      }
+    }
+  }
+
+  @media (min-width: 1550px) {
+    .SecondaryHeader {
+      width: calc(100vw - 15px);
+
+      .NavBar-Btn {
+        font-size: 22px;
+        height: 30px;
+        min-width: 140px;
+      }
+
+      .UserAction {
+        font-size: 2em;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @media (min-width: 1670px) {
+
+    .SecondaryHeader {
+
+      .UserAction {
+        font-size: 2.15em;
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@import "../../variables";
+
+
+
+.ForgotPasswordFormTable td {
+  padding: 5px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin: 0px 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 4px;
+  line-height: 15px;
+  font-weight: 800;
+  text-align: left;
+
+}
+
+
+
+.resetPwForm .Input {
+  width: 100%;
+  display: flex;
+  padding: 10px 0 0 0;
+  flex: 1 1;
+ margin: -30px 0 0 30px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  line-height: 25px;
+  font-size: 24px; }
+
+
+
+
+  .resetPwForm { max-width: 50%; margin: 0 auto; }
+
+.resetPwForm h1 { font-size: 1em; text-align:center;}
+
+.retrievePw, .retrievePw:focus, .retrievePw:before, .retrievePw:after {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Oswald",sans-serif;
+  font-size: 1em;
+  line-height: 1.15;
+}
+
+.retrievePw input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 4px 0;
+  color: #182e5a;
+  background: #efefef;
+  border: 0;
+  border-radius: 4px;
+  box-shadow:0 0 4px 2px rgba(0,0,0,0.06);
+}
+
+.resetPwForm input[type=text]:hover, .resetPwForm button:hover  { background: #ffffff; box-shadow:0 0 2px 1px rgba(0,0,0,0.15); }
+
+.resetPwForm input[type=text]:focus {
+  border-bottom: 1px solid #b39d61;
+}
+
+.resetPwForm input[type=text]:invalid {
+  border-bottom: 2px dashed red;
+}
+
+.resetPwForm input[type=text]:valid {
+ background: #ffffff;
+}
+
+
+.resetPwForm button {
+  appearance:none;
+  -webkit-appearance:none;
+
+  padding: 10px;
+  margin: 4px 0;
+  background-color: $signature-color;
+  color:#fff;
+  border:none;
+  box-shadow:0 0 4px 2px rgba(0,0,0,0.06);
+  border-radius: 4px;
+  text-transform: uppercase;
+  width:100%;
+}
+
+.resetPwForm button:hover { background-color: $secondary-signature-color;  }
+
+.resetPwForm button span { text-shadow: 2px 1px 0 rgba(39,39,39,.25); letter-spacing: .85px; }
+
+/*
+.ResetMyPasswordBtn {
+  border: 1px solid #112d5d;
+  box-shadow: 1px 1px 2px #333;
+  text-transform: uppercase;
+ color: $signature-color;
+  white-space: nowrap;
+  overflow: visible;
+  padding: 5px;
+  line-height: 20px;
+  margin: 10px 0 10px 0;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  background-color: $signature-color; }
+
+ */
+
+
+
+
+/*
+.resetPwForm label {
+  display:block;
+}
+
+.resetPwForm label p {
+  display:inline-block;
+  width: 30%;
+  max-width: 30%;
+}
+*/
+
+
+label {
+    text-align: left;
+    left: 0;
+    position: relative;
+    float: left;
+}
+
+.resetPwForm input:required + span:after {
+  content: "Required";
+}
+
+
+.resetPwForm .inputWrapper {} 
+
+
+.resetPwForm .formWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+.resetPwForm .formWrapper .inputLabelNameWrapper {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+
+
+.resetPwForm .fa-user:before {
+  content: "\f007";
+  display: inline-block;
+  font-size: 25px;
+  top: 20px;
+  margin: 0 0 0 0;
+
+}
+
+
+.resetPwForm .formWrapper .inputWrapper {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+
+//button.ResetMyPasswordBtn { background: rgba(102,0,255,1);  }
+
+
+
+.resetPwForm fieldset {
+background-color: #cccccc;
+  border-radius: 3px;
+  border: 0 solid transparent;
+}

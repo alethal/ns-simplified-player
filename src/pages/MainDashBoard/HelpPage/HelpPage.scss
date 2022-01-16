@@ -1,0 +1,71 @@
+@import "../../../variables";
+
+.HelpPage {
+  padding: 0;
+
+  .HelpPage-inner {
+    background-color: $dark-black;
+    padding-top: 10px;
+    border-radius: 5px;
+
+    .HeadlineRow {
+      padding: 0 20px;
+      font-size: 30px;
+      align-items: center;
+      flex-direction: column;
+
+      .Headline {
+        color: $signature-color;
+        background-color: $dark-black;
+        font-weight: bold;
+        border: none;
+        text-transform: uppercase;
+      }
+    }
+
+    .HelpPage-container {
+      padding: 0 20px 20px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    padding: 20px;
+
+    .HelpPage-inner {
+
+      .HeadlineRow {
+        padding: 0;
+        flex-direction: row;
+        color: $dark-black;
+
+        .Headline {
+          color: $dark-black;
+          padding: 10px 60px;
+          background-color: $signature-color;
+          font-weight: bold;
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+
+      .HelpPage-container {
+        padding: 60px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: row;
+
+    &.JustifySpaceBetween {
+      justify-content: space-between;
+    }
+  }
+}
