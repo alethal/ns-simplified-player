@@ -1,0 +1,45 @@
+@import "../../variables";
+
+.SceneImage {
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.SceneImageLoader {
+  overflow: hidden;
+  background-color: $gray;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
+    animation: defaultImageLoad 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation-iteration-count: 100;
+  }
+
+  @keyframes defaultImageLoad {
+    from {
+      left: -150px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+}

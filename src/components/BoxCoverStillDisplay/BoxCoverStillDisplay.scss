@@ -1,0 +1,52 @@
+@import "../../variables";
+
+.BoxCoverStillDisplay {
+  display: flex;
+  flex-direction: row;
+  transform: translate3d(0, 0, 0);
+
+  .BoxCover {
+    width: 28%;
+    background-size: cover;
+    float: left;
+    height: fit-content;
+    margin-right: 5px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .Still {
+    float: left;
+    width: 72.5%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    background-size: 100%;
+    transform: translate3d(0, 0, 0);
+    margin-left: -1px;
+
+    .SceneImageHoverPlayer {
+      height: 100%;
+
+      .SceneImageContainer {
+        height: 100%;
+
+        .SceneImage {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .BoxCoverStillDisplayImageOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

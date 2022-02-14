@@ -1,0 +1,61 @@
+.ImageComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > .imageloader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+
+    .ImageComponent-notFound {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .DefaultImageLoader {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+  }
+
+  &.FlipEnabled {
+
+    .DefaultImageLoader {
+
+      &:first-of-type {
+        display: none;
+      }
+
+      &:last-of-type {
+        display: block;
+      }
+    }
+
+    &.FrontImageView {
+
+      .DefaultImageLoader {
+
+        &:first-of-type {
+          display: block;
+        }
+
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+}

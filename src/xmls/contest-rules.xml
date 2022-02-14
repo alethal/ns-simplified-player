@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contest-rules-style.xsl"?>
+<contest xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NakedSword 20th anniversary</title>
+    <subtitle>Free monthly giveaway contest rules</subtitle>
+    <contest-rules>
+        <rule>
+            <index>1.</index>
+            <text>The contest will run for each month during 2020.</text>
+        </rule>
+        <rule>
+            <index>2.</index>
+            <text>To enter the contest, participants must be logged in to the member's area and go to
+                <i>https://www.nakedsword.com/member-benefit-enter</i>
+                to enter their email address.
+            </text>
+        </rule>
+        <rule>
+            <index>3.</index>
+            <text>Email address will be cumulatively collected and put into a randomizer at the end of each month. One
+                winner sill be selected each month to receive the free promotional item of the month. Winners will be
+                announced on the first day of the following month.
+            </text>
+        </rule>
+        <rule>
+            <index>4.</index>
+            <text>The winners will be notified by email and will be asked to provide proof of age. The winner will have
+                3
+                days to provide that information. Failing to do so, may lead to disqualification.
+            </text>
+        </rule>
+        <rule>
+            <index>5.</index>
+            <text>Incorrect information provided may result in disqualification and anothe entrant will be selected at
+                random.
+            </text>
+        </rule>
+        <rule>
+            <index>6.</index>
+            <text>All prizes must be accepted as awarded. Prizes are non-exchangeable, non-transferable, and are not
+                redeemable for cash or other prizes.
+            </text>
+        </rule>
+        <rule>
+            <index>7.</index>
+            <text>Participation in the draw constitutes acceptance of, and compliance with, the draw rules.</text>
+        </rule>
+        <rule>
+            <index>8.</index>
+            <text>Participants must be 18 or older and be able to verify age.</text>
+        </rule>
+        <rule>
+            <index>9.</index>
+            <text>Please click here to see our privacy policy
+                <i>https://www.nakedsword.com/privacy</i>
+            </text>
+        </rule>
+        <rule>
+            <index>10.</index>
+            <text>No additional purchase necessary, limited to U.S. residents only</text>
+        </rule>
+    </contest-rules>
+</contest>

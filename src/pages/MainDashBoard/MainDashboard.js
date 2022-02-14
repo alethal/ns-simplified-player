@@ -22,7 +22,7 @@ import Mask4Mask from "./WeekendsPage/mask4mask.js";
 import MissPineapple2021 from "./WeekendsPage/misspineapple2021.js";
 import MrMan2020 from "./WeekendsPage/mrman2020.js";
 import WeekendsPage from './WeekendsPage/WeekendsPage';
-import StandAlonePlayerPage from "./StandAlonePlayerPage/StandAlonePlayerPage.js";
+import StandAlonePlayerPage from "../StandAlonePlayerPage/StandAlonePlayerPage.js";
 import {routes
 } from "../../services/navigation/navigation.service.routes";
 import {getPlayerConfig} from "../../services/player/player.service";

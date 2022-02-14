@@ -1,4 +1,4 @@
-//import {removeSpecialCharacters} from "../util-service/util.service";
+import {removeSpecialCharacters} from "../util-service/util.service";
 //import {links} from "../../links";
  //import ForgotPasswordPage from "../../pages/MainDashBoard/ForgotPasswordPage";
 //import React from "react";
@@ -103,39 +103,38 @@ export const routes = {
 //export const getBrowsingPageRoute = () => `/${routes.browse}`;
 
 
+export const getStarsBaseRoute = () => `/${routes.stars}`;
 
-//export const getStarsBaseRoute = () => `/${routes.stars}`;
+export const getStarsPageRoute = (page, sort) => `${getStarsBaseRoute()}?page=${page}&sort=${sort}`;
 
-//export const getStarsPageRoute = (page, sort) => `${getStarsBaseRoute()}?page=${page}&sort=${sort}`;
+export const getStarDetailsBaseRoute = () => {
+  return `${getStarsBaseRoute()}/star`;
+};
 
-//export const getStarDetailsBaseRoute = () => {
-  //return `${getStarsBaseRoute()}/star`;
-//};
+export const getStarDetailsRoute = (starId, starName) => {
+  if (starName) {
+    starName = removeSpecialCharacters(starName);
+  }
+  return `${getStarDetailsBaseRoute()}/${starId}/${starName}`;
+ };
 
-//export const getStarDetailsRoute = (starId, starName) => {
-  //if (starName) {
-  //  starName = removeSpecialCharacters(starName);
- // }
-//  return `${getStarDetailsBaseRoute()}/${starId}/${starName}`;
-// };
+ export const getStudiosRoute = () => `/${routes.studios}`;
 
-//export const getStudiosRoute = () => `/${routes.studios}`;
+export const getStudioDetailsRoute = (id, name) => {
+  if (name) {
+   name = removeSpecialCharacters(name);
+  }
+ return `/${routes.studios}/${id}/${name}`;
+ };
 
-//export const getStudioDetailsRoute = (id, name) => {
-//  if (name) {
- //   name = removeSpecialCharacters(name);
- // }
- // return `/${routes.studios}/${id}/${name}`;
-// };
+export const getThemesRoute = () => `/${routes.themes}`;
 
-//export const getThemesRoute = () => `/${routes.themes}`;
-
-//export const getThemeDetailsRoute = (id, name) => {
- // if (name) {
-  //  name = removeSpecialCharacters(name);
- // }
- // return `/${routes.theme}/${name}/${id}`;
-//};
+export const getThemeDetailsRoute = (id, name) => {
+ if (name) {
+    name = removeSpecialCharacters(name);
+  }
+  return `/${routes.theme}/${name}/${id}`;
+};
 
 // export const getSexActDetailsRoute = (id, name) => {
  // if (name) {

@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.ExpandingCalculatedText {
+  display: flex;
+  flex-direction: row;
+
+  .Main, .FakeItems {
+    display: flex;
+    flex-direction: row;
+    font-size: $subtitle-font-size;
+    flex-wrap: nowrap;
+    margin-top: 2px;
+
+    a {
+      color: $white;
+      text-transform: none;
+      font-weight: initial;
+      text-decoration: none;
+      margin-right: 5px;
+      white-space: nowrap;
+
+      &:hover {
+        opacity: .5;
+      }
+
+      &.Hidden {
+        display: none;
+      }
+    }
+
+    &.Expanded {
+      flex-wrap: wrap;
+
+      a {
+
+        &.Hidden {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .ExpandingCalculatedText-expander, .ExpandingCalculatedText-collapse {
+    cursor: pointer;
+    font-size:$subtitle-font-size;
+    opacity: .5;
+
+    &:hover {
+      font-weight: bold;
+      color: $black;
+      opacity: 1;
+    }
+  }
+}

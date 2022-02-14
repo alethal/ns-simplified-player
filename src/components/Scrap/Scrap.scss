@@ -1,0 +1,37 @@
+@import "../../variables";
+
+.Truncation {
+  display: inline-block;
+  max-width: fit-content;
+
+  .Truncation-inner {
+    display: flex;
+    flex-direction: row;
+
+    .ReadMore, .ReadLess {
+      color: $gray;
+      font-style: italic;
+      margin-left: 10px;
+      cursor: pointer;
+      font-weight: 400;
+      font-family: $font-family-signature;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.ScrapExpanded {
+  .ReadLess {
+    color: $gray;
+    font-style: italic;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

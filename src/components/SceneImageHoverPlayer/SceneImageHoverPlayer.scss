@@ -1,0 +1,68 @@
+.SceneImageHoverPlayer {
+
+  .SceneImageContainer {
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+
+    .MainView {
+      height: 100%;
+      width: 100%;
+
+      .SceneImage {
+        background-image: none !important;
+      }
+
+      .PlayButton, .OverlayElement {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .ProgressComponent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .OverlayElement {
+        z-index: 10;
+      }
+
+      .FullPlayer {
+        height: 100%;
+        width: 100%;
+
+        .BaseVideoPlayerCore-inner {
+          min-height: 0;
+
+          .video-js {
+            min-height: auto;
+          }
+        }
+
+        .vjs-loading-spinner {
+          display: none;
+        }
+
+        .vjs-big-play-button {
+          display: none;
+        }
+
+        &.Hidden {
+          display: none;
+        }
+      }
+    }
+
+    .MouseEventOverlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

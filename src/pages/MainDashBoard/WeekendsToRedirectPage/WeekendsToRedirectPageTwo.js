@@ -5,7 +5,7 @@ export default function RedirectPageComponent(){
         <Match path="/weekendstoredirectpagetwo">
             {props =>
                 props.match ? (
-                    <div><Redirect to="/weekendslandingpage" /></div>
+                    <div><Redirect to="/weekends" /></div>
                 ) : (
                     <div>The Path is NOT "weekends-"</div>
                 )

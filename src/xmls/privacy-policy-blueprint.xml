@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<privacy-policy>
+    <privacies>
+        <privacy>
+            <title>The information we collect</title>
+            <text>When you sign up with our billing provider, we are given your email address, subscriptionID and
+                transactionsID. Please see our authorized merchant's Privacy Policy concerning collected information from them.
+                When you fill out a trouble report form, we ask you to submit information about your computer, connection and
+                software. To notice applies to all information collected or submitted on the {{siteName}} website.
+            </text>
+        </privacy>
+        <privacy>
+            <title>The way we use information</title>
+            <text>We use the information that we get from our billing provider to verify that you have purchased a membership.
+                Additionally, we use your email address to give you access to {{siteName}} and its services. Any information
+                submitted to us on our trouble report form is only used to help us diagnose your specific problem(s).
+            </text>
+        </privacy>
+        <privacy>
+            <title>Our commitment to data security</title>
+            <text>To prevent unauthorized access, maintain data accuracy, and ensure the correct use of information, we have put
+                in place appropriate physical, electronic, and managerial procedures to safeguard and secure the information we collect
+                online.
+            </text>
+        </privacy>
+        <privacy>
+            <title>How you can access or correct your information</title>
+            <text>You can access all your personally identifiable information that we collect online and maintain by emailing
+                support@adultpaysitesupport.com. Please include your user name and password and use "Please Send Personal Information"
+                in the subject line of your email. We use this procedure to better safeguard your information.
+                You can correct factual errors in your personally identifiable information by sending us a request that credibily
+                shows error. To protect your privacy and security, we will also take reasonable steps to verify your identity before granting access
+                or make corrections.
+            </text>
+        </privacy>
+    </privacies>
+</privacy-policy>
